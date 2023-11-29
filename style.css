@@ -1,62 +1,94 @@
 *{
     padding: 0;
     margin: 0;
-}
-
-body{
-    /* font-family: 'Times New Roman', Times, serif; */
-    background: #1d2d5c
-}
-
-.container{
-    border: 1px solid #1d2d5c;
-    width: 90%;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: ;
+    color: #1d2d5c;
+    background-color:  #89cff0
+  }
+  
+  .container{
+    width: 95%;
     margin: auto;
     display: flex;
-}
-
-.groceries{
-    width: 1000px;
+  }
+  
+  .notebook{
+    width: 600px;
     min-height: 100vh;
-    margin: auto;
-    background: #89cff0;
-    box-shadow: 10px 10px 20px 0
-
-}
-
-.groceries h1{
-    font-size: 2rem;
-    color:#1d2d5c
-}
-
-.groceries input{
+    padding-top: 20px;
+    margin:auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    color: #1d2d5c;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  
+  }
+  
+  .title{
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .input-container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .input-container i{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: lightpink;
+  }
+  
+  .input-container input{
     font-family: inherit;
     outline: 0;
     border: 0;
-    border-bottom: 3px solid #1d2d5c;
-    width: 70%;
+    width: 65%;
     font-size: 1.5rem;
-}
-
-#allItems h2(
-    margin-left: 50px;
-    margin-right: 10px;
-    margin-top: 15px;
-    font-size: 2rem;
-)
-
-@media(maxwidth:490px){
-    .groceries h1{
-        font-size: 2rem;
+    border-bottom: 3px solid #89cff0;
+  }
+  
+  #groceryItems{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 75%;
+    font-size: 1.5rem;
+  }
+  
+  #groceryItems h2{
+    cursor: pointer;
+  }
+  
+  @media(max-width:768px) {
+    #groceryItems {
+      font-size: 1.2rem;
     }
-    .groceries i{
-        font-size: 1.5rem;
+  }
+  
+  @media(max-width:480px){
+    .title{
+      font-size: 1rem;
     }
-    .groceries input{
-        font-size: 1rem;
+  
+    .input-container i{
+      font-size: 2rem;
     }
-    .groceries h2{
-        margin-left: 25px;
-        font-size: 1.5rem;
+  
+    .input-container input{
+      font-size: 1rem;
     }
-}
+  
+    #groceryItems{
+      font-size: 0.9rem;
+    }
+  }
