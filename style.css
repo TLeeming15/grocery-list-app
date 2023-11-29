@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* font-family: 'Times New Roman', Times, serif; */
+    background: #1d2d5c
+}
+
+.container{
+    border: 1px solid #1d2d5c;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{
+    width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+    background: #89cff0;
+    box-shadow: 10px 10px 20px 0
+
+}
+
+.groceries h1{
+    font-size: 2rem;
+    color:#1d2d5c
+}
+
+.groceries input{
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid #1d2d5c;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allItems h2(
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+)
+
+@media(maxwidth:490px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i{
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    .groceries h2{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+}
